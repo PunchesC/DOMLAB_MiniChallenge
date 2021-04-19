@@ -1,0 +1,28 @@
+body{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#lightbulb{
+  width:50%;
+  height:70px;
+  
+  display: flex;
+  justify-content: center;
+
+}
+
+button{
+  margin:20px;
+}
+
+.bright{
+  background-color: lightsalmon;
+}
+
+
+
+.border{
+  border:solid 5px chartreuse;
+}
