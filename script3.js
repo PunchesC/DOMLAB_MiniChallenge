@@ -8,10 +8,18 @@ document.getElementById("toggle").onclick =function turnToggleBright(){ let el=d
 el.classList.toggle("bright");}
 
 
-// button.disable=true
 
-let removeLight =document.getElementById("end").onclick =function removeLightbulb(){ let el=document.getElementById("lightbulb");
-el.remove();}
+
+let removeLight =document.getElementById("end").addEventListener("click", function removeLightbulb(){ 
+  let el=document.getElementById("lightbulb");
+el.remove();
+document.getElementById("on").disabled = true;
+document.getElementById("off").disabled = true;
+document.getElementById("toggle").disabled = true;
+document.getElementById("end").disabled = true;
+});
+
+
 
 
 // let removeLight =document.getElementById("end").onclick =function removeLightbulb(){ let el=document.getElementById("lightbulb");

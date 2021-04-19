@@ -8,22 +8,26 @@
   <title>DOM EX 1</title>
 </head>
 <body>
-<form>
+<form id ="moneyForm">
   <div>
     <label for="howMany">How Many?</label>
-    <input type="number" id="howMany" name="howMany"></div>
+    <!-- bonus:min and step -->
+    <input type="number" id="howMany" name="howMany" value="2" min="1" step ="1"></div>
  
   <div>
-  <label for="coins">Choose a Coin</label>
-  <select id="coins" name="coins">
-    <option value=.01>Penny</option>
-    <option value=.05>Nickel</option>
-    <option value=.10>Dime</option>
-    <option value=.25>Quarter</option>
+  <label for="whichCoin">Choose a Coin</label>
+  <select id="whichCoin" name="whichCoins">
+    <option>Penny</option>
+    <option>Nickel</option>
+    <option>Dime</option>
+    <option>Quarter</option>
   </select>
 </div>
 <div>
-  <input type="submit" value="Make Money!">
+  <input type="submit">
+</div>
+<div id="coins">
+
 </div>
 
 
@@ -34,6 +38,6 @@
 
 
 
-<script src = "script2"></script>
+<script src = script2.js></script>
 </body>
 </html>
