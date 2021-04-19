@@ -1,5 +1,41 @@
+"use strict"
+{
 
+  let total=0;
+  let inputValue = document.querySelectorAll("input")
+  console.log(inputValue);
 
+  // for (let input of inputValue){
+    // console.log(input);
+    // cokeValue = inputValue[0].value;
+    // console.log(cokeValue);
+    inputValue[0].addEventListener("click", ()=>{
+     addToTotal(2);
+    });
+    inputValue[1].addEventListener("click", ()=>{
+      addToTotal(2);
+    });
+    inputValue[2].addEventListener("click", ()=>{
+     addToTotal(3);
+    });
+    inputValue[3].addEventListener("click", ()=>{
+      addToTotal(2);
+    });
+
+    function addToTotal (amount){
+      total += amount;
+      console.log(total);
+      document.getElementById("total").innerText = `$${total.toFixed(2)}`;
+
+    }
+  //   drPepperValue = inputValue[1].value;
+  //   console.log(drPepperValue);
+  //   spriteValue = inputValue[2].value;
+  //   console.log(spriteValue);
+  //   dietCokeValue = inputValue[3].value;
+  //   console.log(dietCokeValue);
+  // document.getElementById("coke").onclick = function addCook(){let el =document.getElementById("total.value");
+  // el += cokeValue;
 
 
 
@@ -25,28 +61,28 @@
 
 // console.log(addition());
 
-let total=0;
-let inputValue = document.querySelectorAll("input")
-console.log(inputValue);
-// for (let input of inputValue){
-  // console.log(input);
-  cokeValue = inputValue[0].value;
-  console.log(cokeValue);
-  drPepperValue = inputValue[1].value;
-  console.log(drPepperValue);
-  spriteValue = inputValue[2].value;
-  console.log(spriteValue);
-  dietCokeValue = inputValue[3].value;
-  console.log(dietCokeValue);
-document.getElementById("coke").onclick = function addCook(){let el =document.getElementById("total.value");
-el += cokeValue;
+// let total=0;
+// let inputValue = document.querySelectorAll("input")
+// console.log(inputValue);
+// // for (let input of inputValue){
+//   // console.log(input);
+//   cokeValue = inputValue[0].value;
+//   console.log(cokeValue);
+//   drPepperValue = inputValue[1].value;
+//   console.log(drPepperValue);
+//   spriteValue = inputValue[2].value;
+//   console.log(spriteValue);
+//   dietCokeValue = inputValue[3].value;
+//   console.log(dietCokeValue);
+// document.getElementById("coke").onclick = function addCook(){let el =document.getElementById("total.value");
+// el += cokeValue;
      
       
       
     
       
-    }
-  console.log(total);
+//     }
+//   console.log(total);
 
 
 // =function addCokeValue(){ Number(cokeValue) += total;}
@@ -167,3 +203,4 @@ el += cokeValue;
 //   totalSales.value += cokeAdd;
 // }
 
+  }
