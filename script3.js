@@ -20,12 +20,12 @@ el.remove();}
 // let uglyBorder= document.getElementById("end").onclick =function removeLightbulb(){ let el=document.getElementById("lightbulb");
 // el.classList.toggle("border");}
 
-document.getElementById("end").addEventListener("click", myFunction);
+// document.getElementById("end").addEventListener("click", myFunction);
 
-function myFunction() {
-let removeLight =  document.getElementById("end").onclick =function removeLightbulb(){ let el=document.getElementById("lightbulb");}
+// function myFunction() {
+// let removeLight =  document.getElementById("end").onclick =function removeLightbulb(){ let el=document.getElementById("lightbulb");}
 
-}
+// }
 
 
 
